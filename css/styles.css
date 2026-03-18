@@ -5,7 +5,7 @@
 }
 
 body {
-  background-color: #caf0f8;
+  background: linear-gradient(135deg, #121212, #1a1a1a);
   display: flex;
   height: 100vh;
   justify-content: center;
@@ -13,21 +13,21 @@ body {
 }
 
 .calculadora {
-  padding: 10px;
-  border: 4px solid #f15bb5;
+  padding: 2rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
   border-radius: 10px;
   display: flex;
   flex-direction: column;
-  gap: 10px;
-  background-color: #9b5de5;
+  gap: 24px;
+  background-color: #1e1e1e;
   font-family: "Quantico", sans-serif;
 }
 
 .tela {
   height: 80px;
-  border: 2px solid #f15bb5;
+  border: 1px solid rgba(255, 255, 255, 0.05);
   border-radius: 8px;
-  background-color: #b8b8ff;
+  background-color: #2a2a2a;
 }
 
 .buttons {
@@ -36,16 +36,22 @@ body {
   gap: 5px;
 }
 
-.buttons > #btn-equal {
-  grid-column: span 2;
-}
-
 .buttons > div {
-  background-color: #00bbf9;
-  color: #fee440;
+  background-color: #3a3a3a;
+  color: #ffffff;
   padding: 8px 16px;
   text-align: center;
-  border: 2px solid #f15bb5;
+  border: 1px solid rgba(255, 255, 255, 0.05);
   font-size: 40px;
   border-radius: 10px;
+}
+
+.buttons > .action {
+  background-color: #2b3a4a;
+  color: #4dabf7;
+}
+
+.buttons > #btn-equal {
+  grid-column: span 2;
+  background-color: #4dabf7;
 }
